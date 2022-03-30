@@ -6,7 +6,7 @@ if (isset($_COOKIE["voted"]) && isset($_POST["submit"])) {
     </div>
     <?php
 } elseif (isset($_POST["option"])) {
-    setcookie("voted", $_POST["option"], time()+5);
+    setcookie("voted", $_POST["option"], time()+120);
 }
 
 ?>
